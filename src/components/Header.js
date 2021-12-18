@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 import Contact from "./Contact";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
-import Aboutme from './Aboutme';
+import About from './About';
 
 function Header() {
   const [currentPage, handlePageChange] = useState("About");
@@ -11,8 +11,8 @@ function Header() {
   // The renderPage method uses a switch statement to rendercurrent page
   const renderPage = () => {
     switch (currentPage) {
-      case "Aboutme":
-        return <Aboutme />;
+      case "About":
+        return <About />;
       case "Portfolio":
         return <Portfolio />;
       case "Contact":
@@ -21,7 +21,7 @@ function Header() {
         return <Resume />;
 
       default:
-        return <Aboutme />;
+        return <About />;
     }
   };
 
