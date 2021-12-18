@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navigation(props) {
-  const tabs = ["About", "Portfolio", "Contact", "Resume"];
+  const tabs = ["Aboutme", "Portfolio", "Contact", "Resume"];
   return (
     <div className="tabs is-centered">
       <ul className="nav nav-tabs">
